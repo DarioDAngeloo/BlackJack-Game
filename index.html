@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="src/styl.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
@@ -19,7 +20,9 @@
         BlackJack
       </h2>
       <!-- question and messages -->
-      <p class="text-xl font-lights" id="message">Want to play a round?</p>
+      <p class="text-lg md:text-xl font-lights" id="message">
+        Want to play a round?
+      </p>
       <!-- question and messages -->
       <!--  -->
       <!--  -->
@@ -32,12 +35,12 @@
       <!--  -->
       <!--  -->
       <!-- BUTTON START -->
-      <p
-        class="mt-3 rounded-full text-lg inline-block md:text-2xl active:shadow-lg py-2 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 active:cursor-pointer"
+      <button
+        class="buttons mt-3 rounded-full text-lg inline-block md:text-2xl active:shadow-lg py-2 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800"
         onclick="startGame()"
       >
         Start Game
-      </p>
+      </button>
       <!-- BUTTON START -->
       <!--  -->
       <!--  -->
@@ -45,24 +48,24 @@
       <!-- BUTTON NEW CARD -->
       <!--  -->
       <br />
-      <p
-        class="mt-3 inline-block rounded-full text-lg md:text-2xl active:shadow-lg py-2 px-10 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 active:cursor-pointer"
+      <button
+        class="buttons mt-3 inline-block rounded-full text-lg md:text-2xl active:shadow-lg py-2 px-10 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800"
         onclick="newGame()"
       >
         New Card
-      </p>
+      </button>
 
       <!--  -->
       <!-- BUTTON NEW CARD -->
       <!--  -->
       <!--  -->
       <div></div>
-      <p
+      <button
         onclick="reset()"
-        class="mt-3 inline-block rounded-full text-lg md:text-2xl active:shadow-lg p-2 px-14 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 active:cursor-pointer"
+        class="buttons mt-3 inline-block rounded-full text-lg md:text-2xl active:shadow-lg p-2 px-14 duration-200 hover:bg-orange-200/20 border border-orange-900 text-yellow-900 hover:text-yellow-800"
       >
         Reset
-      </p>
+      </button>
       <div></div>
       <!--  -->
       <!--  -->
