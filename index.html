@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-orange-300/80">
+    <!--  -->
+    <div
+      class="text-center shadow-xl font-mono bg-orange-100 max-w-sm p-6 rounded-3xl mx-auto mt-40"
+    >
+      <h2 class="text-5xl md:text-6xl mb-4 text-amber-800 font-bold">
+        BlackJack
+      </h2>
+      <!-- question and messages -->
+      <p class="text-2xl font-lights" id="message">Want to play a round?</p>
+      <!-- question and messages -->
+      <!--  -->
+      <!--  -->
+      <!-- cards show -->
+      <p class="text-lg" id="cards-E">Cards:</p>
+
+      <!-- cards show -->
+      <p class="text-lg">Sum: <span id="sumHtml"></span></p>
+      <!-- BUTTONS -->
+      <!--  -->
+      <!--  -->
+      <!-- BUTTON START -->
+      <button
+        type="button"
+        class="mt-3 rounded-full text-2xl active:shadow-lg p-3 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800"
+        onclick="startGame()"
+      >
+        Start Game
+      </button>
+      <!-- BUTTON START -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- BUTTON NEW CARD -->
+      <!--  -->
+      <br />
+      <button
+        type="button"
+        class="mt-3 rounded-full text-2xl active:shadow-lg p-3 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800"
+        onclick="newGame()"
+      >
+        New Card
+      </button>
+      <h4 id="money"></h4>
+      <!--  -->
+      <!-- BUTTON NEW CARD -->
+      <!--  -->
+      <!--  -->
+      <div></div>
+      <button
+        type="button"
+        onclick="reset()"
+        class="mt-3 rounded-full text-2xl active:shadow-lg p-3 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 tracking-wider"
+      >
+        Reset
+      </button>
+      <div></div>
+      <!--  -->
+      <!--  -->
+      <!-- BUTTONS -->
+    </div>
+
+    <script src="index.js"></script>
+    <!--  -->
+  </body>
+</html>
