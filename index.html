@@ -8,35 +8,36 @@
     <link rel="stylesheet" href="/dist/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-orange-300/80">
+  <body
+    class="bg-orange-300/80 items-center flex text-center justify-center select-none"
+  >
     <!--  -->
     <div
-      class="text-center shadow-xl font-mono bg-orange-100 max-w-sm p-6 rounded-3xl mx-auto mt-40"
+      class="text-center shadow-xl font-mono bg-orange-100 max-w-sm p-6 lg:max-w-7xlxl rounded-3xl mx-8 mt-28"
     >
-      <h2 class="text-5xl md:text-6xl mb-4 text-amber-800 font-bold">
+      <h2 class="text-5xl md:text-6xl mb-4 text-amber-500 font-bold">
         BlackJack
       </h2>
       <!-- question and messages -->
-      <p class="text-2xl font-lights" id="message">Want to play a round?</p>
+      <p class="text-xl font-lights" id="message">Want to play a round?</p>
       <!-- question and messages -->
       <!--  -->
       <!--  -->
       <!-- cards show -->
-      <p class="text-lg" id="cards-E">Cards:</p>
+      <p class="text-md" id="cards-E">Cards:</p>
 
       <!-- cards show -->
-      <p class="text-lg">Sum: <span id="sumHtml"></span></p>
+      <p class="text-md">Sum: <span id="sumHtml"></span></p>
       <!-- BUTTONS -->
       <!--  -->
       <!--  -->
       <!-- BUTTON START -->
-      <button
-        type="button"
-        class="mt-3 rounded-full text-2xl active:shadow-lg p-3 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800"
+      <p
+        class="mt-3 rounded-full text-lg inline-block md:text-2xl active:shadow-lg py-2 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 active:cursor-pointer"
         onclick="startGame()"
       >
         Start Game
-      </button>
+      </p>
       <!-- BUTTON START -->
       <!--  -->
       <!--  -->
@@ -44,26 +45,24 @@
       <!-- BUTTON NEW CARD -->
       <!--  -->
       <br />
-      <button
-        type="button"
-        class="mt-3 rounded-full text-2xl active:shadow-lg p-3 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800"
+      <p
+        class="mt-3 inline-block rounded-full text-lg md:text-2xl active:shadow-lg py-2 px-10 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 active:cursor-pointer"
         onclick="newGame()"
       >
         New Card
-      </button>
-      <h4 id="money"></h4>
+      </p>
+
       <!--  -->
       <!-- BUTTON NEW CARD -->
       <!--  -->
       <!--  -->
       <div></div>
-      <button
-        type="button"
+      <p
         onclick="reset()"
-        class="mt-3 rounded-full text-2xl active:shadow-lg p-3 px-9 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 tracking-wider"
+        class="mt-3 inline-block rounded-full text-lg md:text-2xl active:shadow-lg p-2 px-14 duration-200 hover:bg-orange-200/20 font-semibold border border-orange-900 text-yellow-900 hover:text-yellow-800 active:cursor-pointer"
       >
         Reset
-      </button>
+      </p>
       <div></div>
       <!--  -->
       <!--  -->
